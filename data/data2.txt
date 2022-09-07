@@ -1,0 +1,333 @@
+Felice:Sierra 3500
+Fifi:Protege
+Flem:X3
+Frasquito:Mohave/Borrego
+Geoff:Escort
+Georgy:QX
+Gillian:Excel
+Gino:LTD
+Graham:900
+Hedwig:Tahoe
+Helli:ZDX
+Hobey:2500
+Homerus:MPV
+Ianthe:Armada
+Jacquelin:Azera
+Jarvis:Justy
+Jonie:Tahoe
+Jud:Pajero
+Jule:330
+Katusha:Corvair 500
+Keane:Grand Prix
+Kristen:Navigator
+Kristopher:Edge
+Leigh:Custom Cruiser
+Leonanie:Discovery
+Linnie:Grand Am
+Liza:Colt
+Lorenzo:Galant
+Lorianne:Solara
+Lynn:Pilot
+Marsha:XLR-V
+Maxwell:Savana 1500
+Meaghan:Quest
+Melessa:DTS
+Missy:Town & Country
+Mohammed:GTI
+Myra:HHR
+Naomi:Grand Marquis
+Nate:Express 2500
+Nathanael:Astra
+Neille:X5
+Normie:Maxima
+Odella:Concorde
+Pacorro:Ram 1500
+Penelopa:LTD
+Persis:I
+Philippa:Baja
+Raynard:Suburban 2500
+Reilly:325
+Rena:Voyager
+Renelle:Grand Vitara
+Rickert:Vibe
+Ronnie:Amigo
+Sarajane:Suburban 2500
+Serge:Aspire
+Tami:6000
+Tiertza:G6
+Townsend:Ram Van B350
+Traci:Mazda6
+Trefor:500E
+Trixi:Astro
+Tull:C/V
+Ulrick:Suburban 1500
+Weber:Mazda3
+Wendeline:C-Class
+Yorke:Tercel
+Yovonnda:Evora
+Adele:525
+Adeline:Jetta
+Adriena:Escort ZX2
+Alard:Town & Country
+Ali:Rondo
+Alis:Charger
+Andie:S80
+Anet:9-2X
+Arvie:Taurus
+Barry:F150
+Bart:Ram Van 3500
+Beilul:Caravan
+Beniamino:i-Series
+Biddy:Town Car
+Cally:Optima
+Candide:Tiburon
+Caresa:Neon
+Carissa:Grand Marquis
+Cello:A8
+Cindie:Precis
+Cosme:GX
+Dannie:Concorde
+Davin:Diamante
+Debbi:Silverado 3500
+Dedra:Club Wagon
+Denis:Grand Am
+Dietrich:6000
+Duff:Z4
+Eadmund:F250
+Eamon:TundraMax
+Eduard:8 Series
+Elia:Dakota
+Fanya:Ram Van 3500
+Felice:Borrego
+Fifi:Ram 1500
+Flem:Sentra
+Frasquito:Concorde
+Geoff:Explorer Sport
+Georgy:LS
+Gillian:Sonoma Club Coupe
+Gino:Grand Prix
+Graham:Genesis
+Hedwig:E250
+Helli:Bonneville
+Hobey:LR2
+Homerus:Spirit
+Ianthe:V8 Vantage
+Jacquelin:E-Class
+Jarvis:Caprice Classic
+Jonie:Grand Caravan
+Jud:5 Series
+Jule:Express 3500
+Katusha:Villager
+Keane:928
+Kristen:F250
+Kristopher:Trans Sport
+Leigh:Focus
+Leonanie:929
+Linnie:Mustang
+Liza:Econoline E250
+Lorenzo:Mighty Max
+Lorianne:Silverado 3500
+Lynn:Aero 8
+Marsha:Familia
+Maxwell:Solstice
+Meaghan:Z4
+Melessa:Ram Van 2500
+Missy:RAV4
+Mohammed:Silverado 3500HD
+Myra:Esprit
+Naomi:Navigator
+Nate:A8
+Nathanael:Legacy
+Neille:LeSabre
+Normie:LUV
+Odella:Town & Country
+Pacorro:Evora
+Penelopa:3 Series
+Persis:Monte Carlo
+Philippa:Prizm
+Raynard:Silverado
+Reilly:Astro
+Rena:W201
+Renelle:Continental GT
+Rickert:Cabriolet
+Ronnie:Allroad
+Sarajane:Ram
+Serge:Stratus
+Tami:Sidekick
+Tiertza:Caravan
+Townsend:X5
+Traci:MKX
+Trefor:325
+Trixi:Bronco II
+Tull:Eos
+Ulrick:Riviera
+Weber:Protege
+Wendeline:GLK-Class
+Yorke:88
+Yovonnda:Cutlass
+Adele:Savana 1500
+Adeline:GT500
+Adriena:Achieva
+Alard:Maxima
+Ali:F150
+Alis:300ZX
+Andie:Fusion
+Anet:M3
+Arvie:S10
+Barry:xB
+Bart:9-5
+Beilul:Probe
+Beniamino:X6
+Biddy:Safari
+Cally:Taurus
+Candide:Ram Van 3500
+Caresa:Coachbuilder
+Carissa:2500
+Cello:Grand Prix
+Cindie:Century
+Cosme:Malibu
+Dannie:Aries
+Davin:Esprit
+Debbi:XJ Series
+Dedra:Blackwood
+Denis:7 Series
+Dietrich:Grand Voyager
+Duff:Grand Voyager
+Eadmund:Optima
+Eamon:V70
+Eduard:Savana 1500
+Elia:Cutlass Supreme
+Fanya:Montero Sport
+Felice:F350
+Fifi:Camry
+Flem:T100 Xtra
+Frasquito:Accent
+Geoff:Mustang
+Georgy:Tacoma
+Gillian:E-Class
+Gino:Escort
+Graham:9000
+Hedwig:Bonneville
+Helli:Club Wagon
+Hobey:LS
+Homerus:Ram Van 1500
+Ianthe:Trooper
+Jacquelin:B-Series
+Jarvis:RS6
+Jonie:Savana 3500
+Jud:Soul
+Jule:G
+Katusha:Grand Am
+Keane:Esprit
+Kristen:Cordia
+Kristopher:Prius
+Leigh:Century
+Leonanie:Savana 3500
+Linnie:Escort
+Liza:Spirit
+Lorenzo:W201
+Lorianne:Rodeo
+Lynn:MX-5
+Marsha:500SL
+Maxwell:GX
+Meaghan:I
+Melessa:Spectra
+Missy:3500
+Mohammed:M3
+Myra:G-Series G20
+Naomi:Suburban 2500
+Nate:Camaro
+Nathanael:GTI
+Neille:R32
+Normie:S-Class
+Odella:80
+Pacorro:Discovery
+Penelopa:Elise
+Persis:745
+Philippa:Rabbit
+Raynard:RX Hybrid
+Reilly:Monterey
+Rena:3 Series
+Renelle:6 Series
+Rickert:SC
+Ronnie:M
+Sarajane:Diamante
+Serge:Trooper
+Tami:Esteem
+Tiertza:Mirage
+Townsend:Express 1500
+Traci:Tribeca
+Trefor:Viper RT/10
+Trixi:Boxster
+Tull:Ram 1500
+Ulrick:del Sol
+Weber:S4
+Wendeline:Silverado 2500
+Yorke:Premier
+Yovonnda:Panamera
+Adele:Viper
+Adeline:Sierra 2500
+Adriena:Sierra 1500
+Alard:Vitara
+Ali:Passat
+Alis:3000GT
+Andie:Leganza
+Anet:Club Wagon
+Arvie:Chariot
+Barry:LTD
+Bart:Spyder
+Beilul:C30
+Beniamino:7 Series
+Biddy:D250
+Cally:Torino
+Candide:XLR-V
+Caresa:Endeavor
+Carissa:Cayenne
+Cello:E250
+Cindie:929
+Cosme:GX
+Dannie:Bonneville
+Davin:Mazda2
+Debbi:DeVille
+Dedra:Falcon
+Denis:Q
+Dietrich:Sedona
+Duff:ES
+Eadmund:E-Class
+Eamon:SL-Class
+Eduard:Seville
+Elia:CX-9
+Fanya:Alero
+Felice:Vantage
+Fifi:1500
+Flem:Ram 1500
+Frasquito:Echo
+Geoff:rio
+Georgy:Seville
+Gillian:Forenza
+Gino:M6
+Graham:Astra
+Hedwig:Arnage
+Helli:New Beetle
+Hobey:Tundra
+Homerus:Eldorado
+Ianthe:C-Class
+Jacquelin:1500
+Jarvis:Camry Hybrid
+Jonie:Truck
+Jud:Camry
+Jule:Crossfire
+Katusha:Silverado 3500
+Keane:Savana 1500
+Kristen:MPV
+Kristopher:MX-5
+Leigh:Lancer Evolution
+Leonanie:Summit
+Linnie:Montero
+Liza:Land Cruiser
+Lorenzo:CLK-Class
+Lorianne:Legacy
+Lynn:Electra
+Marsha:Sedona
+Maxwell:Supra
+Meaghan:Cabriolet
