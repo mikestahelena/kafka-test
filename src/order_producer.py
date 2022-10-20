@@ -1,15 +1,19 @@
 import json
 
-from confluent_kafka import Producer, Message
+from confluent_kafka import Producer
 import socket
 from datetime import datetime
-from fake_generator import fake_person_generator, fake_order_generator
+from order_data_generator import fake_order_generator
 
 import time
 
 # https://docs.confluent.io/platform/current/installation/configuration/producer-configs.html
+# https://github.com/edenhill/librdkafka/blob/master/CONFIGURATION.md
 producer = Producer(
-    {"bootstrap.servers": "localhost:9092", "client.id": socket.gethostname()}
+    {
+        "bootstrap.servers": "localhost:9092,localhost:9093,localhost:9094",
+        "client.id": socket.gethostname(),
+    }
 )
 topic = "customer-order"
 
@@ -40,6 +44,6 @@ if __name__ == "__main__":
         # Wait up to 1 second for events. Callbacks will be invoked during
         # this method call if the message is acknowledged.
         events += producer.poll(1)
-        time.sleep(1)
+        time.sleep(0.1)
     producer.flush()
     print(f"All {events} messages sent")

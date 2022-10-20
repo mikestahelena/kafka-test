@@ -73,11 +73,13 @@ def fake_order_generator():
             "id": str(uuid.uuid4()),
             "restaurant": random.choice(restaurants),
             "customer": generic.brazil_provider.cpf(),
-            "value": total_value,
+            "state": fake.state_abbr(),
+            "total_value": total_value,
             "items": itens,
             "payment_method": random.choice(payment_methods),
             "updated_at": datetime.now().isoformat(),
             "status_code": fake.pyint(),
+            "lucky_cookie": fake.catch_phrase(),
         }
 
 
@@ -94,14 +96,18 @@ def fake_order_itens(count: int = 2):
         itens.append(
             {
                 "item": i + 1,
-                "name": f"{food.dish()} com {food.spices()} e {food.vegetable()} com {food.fruit()} + bebida {food.drink()}",
+                "dish": food.dish(),
+                "spices": food.spices(),
+                "vegetable": food.vegetable(),
+                "fruit": food.fruit(),
+                "drink": food.drink(),
                 "price": f"{finances.currency_symbol()}{item_value:.2f}",
                 "quantity": item_quantity,
                 "total": f"{finances.currency_symbol()}{total_item:.2f}",
             }
         )
 
-    return f"{finances.currency_symbol()}{total_value:.2f}", itens
+    return float(f"{total_value:.2f}"), itens
 
 
 if __name__ == "__main__":
