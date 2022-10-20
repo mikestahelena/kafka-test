@@ -3,15 +3,15 @@ import json
 from confluent_kafka import Consumer
 
 # https://docs.confluent.io/platform/current/installation/configuration/consumer-configs.html
-consumer = Consumer({
-    "bootstrap.servers": "localhost:9092",
-    "group.id": 'customer-registration-consumers',
-    'auto.offset.reset': 'earliest',
-    'enable.auto.commit': True,
-    'heartbeat.interval.ms': 2500,
-    'max.poll.interval.ms': 90000,
-})
-topic = 'customer-registration'
+consumer = Consumer(
+    {
+        "bootstrap.servers": "localhost:9092",
+        "group.id": "customer-order-consumers",
+        "auto.offset.reset": "earliest",
+        "enable.auto.commit": True
+    }
+)
+topic = "customer-order"
 consumer.subscribe([topic])
 
 if __name__ == "__main__":
@@ -26,13 +26,17 @@ if __name__ == "__main__":
                 print("Waiting for message or event/error in poll()")
                 continue
             elif msg.error():
-                print(f'error: {msg.error()}')
+                print(f"error: {msg.error()}")
             else:
                 # Check for Kafka message
-                print(f"Connected to Topic: {msg.topic()} and Partition : {msg.partition()}")
-                record_key = "Null" if msg.key() is None else msg.key().decode('utf-8')
-                record_value = json.loads(msg.value().decode('utf-8'))
-                print(f"Consumed record with key {record_key} and value {record_value} with Offset : {msg.offset()}")
+                print(
+                    f"Connected to Topic: {msg.topic()} and Partition : {msg.partition()}"
+                )
+                record_key = "Null" if msg.key() is None else msg.key().decode("utf-8")
+                record_value = json.loads(msg.value().decode("utf-8"))
+                print(
+                    f"Consumed record with key {record_key} and value {record_value} with Offset : {msg.offset()}"
+                )
     except KeyboardInterrupt:
         pass
     finally:

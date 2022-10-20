@@ -1,5 +1,5 @@
 #!/bin/bash
-topics=`docker exec kafka1 kafka-topics --bootstrap-server localhost:9092 --list`
+topics=`docker exec broker1 kafka-topics --bootstrap-server localhost:9092 --list`
 
 while read -r line; do lines+=("$line"); done <<<"$topics"
 echo '{"version":1,

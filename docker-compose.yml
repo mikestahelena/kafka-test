@@ -3,7 +3,7 @@
 version: "3"
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.2.1
     container_name: zookeeper
     ports:
       - "2181:2181"
@@ -11,9 +11,9 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
 
-  kafka1:
-    image: confluentinc/cp-kafka:latest
-    container_name: kafka1
+  broker1:
+    image: confluentinc/cp-kafka:7.2.1
+    container_name: broker1
     depends_on:
       - zookeeper
     ports:
@@ -22,17 +22,17 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker1:29092,PLAINTEXT_HOST://localhost:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - ./data:/etc/kafka/data:rw
-      - ./kafka1:/var/lib/kafka/data:rw
+      - ./broker1:/var/lib/kafka/data:rw
 
-  kafka2:
-    image: confluentinc/cp-kafka:latest
-    container_name: kafka2
+  broker2:
+    image: confluentinc/cp-kafka:7.2.1
+    container_name: broker2
     depends_on:
       - zookeeper
     ports:
@@ -41,17 +41,17 @@ services:
     environment:
       KAFKA_BROKER_ID: 2
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:29093,PLAINTEXT_HOST://localhost:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker2:29093,PLAINTEXT_HOST://localhost:9093
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - ./data:/etc/kafka/data:rw
-      - ./kafka2:/var/lib/kafka/data:rw
+      - ./broker2:/var/lib/kafka/data:rw
 
-  kafka3:
-    image: confluentinc/cp-kafka:latest
-    container_name: kafka3
+  broker3:
+    image: confluentinc/cp-kafka:7.2.1
+    container_name: broker3
     depends_on:
       - zookeeper
     ports:
@@ -60,32 +60,13 @@ services:
     environment:
       KAFKA_BROKER_ID: 3
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka3:29094,PLAINTEXT_HOST://localhost:9094
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://broker3:29094,PLAINTEXT_HOST://localhost:9094
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - ./data:/etc/kafka/data:rw
-      - ./kafka3:/var/lib/kafka/data:rw
-
-  schema-registry:
-    image: confluentinc/cp-schema-registry:latest
-    container_name: schema-registry
-    depends_on:
-      - kafka1
-      - kafka2
-      - kafka3
-    ports:
-      - "8081:8081"
-    environment:
-      SCHEMA_REGISTRY_HOST_NAME: schema-registry
-      SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL: zookeeper:2181
-      SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS: kafka1:29092
-      SCHEMA_REGISTRY_KAFKASTORE_TOPIC: "_schemas"
-      SCHEMA_REGISTRY_KAFKASTORE_SCHEMA_REGISTRY_URL: http://schema-registry:8081
-      SCHEMA_REGISTRY_KAFKASTORE_SCHEMA_REGISTRY_LISTENERS: http://schema-registry:8081
-      SCHEMA_REGISTRY_LOG4J_ROOT_LOGLEVEL: "INFO"
-
+      - ./broker3:/var/lib/kafka/data:rw
 
   akhq:
     image: tchiotludo/akhq:latest
@@ -94,12 +75,8 @@ services:
       AKHQ_CONFIGURATION: |
         akhq:
           connections:
-            docker-kafka-server:
+            kafka-cluster:
               properties:
-                bootstrap.servers: 'kafka1:29092'
-              schema-registry:
-                url: 'http://schema-registry:8081'
+                bootstrap.servers: 'broker1:29092, broker2:29093, broker3:29094'
     ports:
       - "8080:8080"
-    depends_on:
-      - kafka

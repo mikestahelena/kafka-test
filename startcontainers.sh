@@ -1,11 +1,7 @@
 echo -e "\nStarting containers ....."
-rm -rf kafka1
-rm -rf kafka2
-rm -rf kafka3
-mkdir kafka1
-mkdir kafka2
-mkdir kafka3
-chmod 777 kafka1
-chmod 777 kafka2
-chmod 777 kafka3
+for i in 1 2 3; do
+  rm -rf broker$i
+  mkdir broker$i
+  chmod 777 broker$i
+done
 docker compose up -d
