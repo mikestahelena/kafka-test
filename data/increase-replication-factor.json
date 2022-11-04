@@ -1,19 +1,19 @@
 {
 	"partitions":[
 		{
-			"topic":"message-tests",
+			"topic":"customer-order",
 			"partition":0,
 			"leader":1,
 			"replicas":[1, 2, 3]
 		},
 		{
-			"topic":"message-tests",
+			"topic":"customer-order",
 			"partition":1,
 			"leader":2,
 			"replicas":[1, 2, 3]
 		},
 		{
-			"topic":"message-tests",
+			"topic":"customer-order",
 			"partition":2,
 			"leader":3,
 			"replicas":[1, 2, 3]

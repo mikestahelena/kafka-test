@@ -2,7 +2,7 @@ Abrir [AKHQ][akhq] e verificar o cluster
 
 Criar tópico
 ```bash
-docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --create --topic message-tests
+docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --create --topic customer-order
 ```
 
 Listar tópicos
@@ -12,7 +12,7 @@ docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --list
 
 Describe do tópico
 ```bash
-docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --describe --topic message-tests
+docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --describe --topic customer-order
 ```
 - ***PartitionCount***: Quantidade de partições do tópico (paralelismo)
 - ***ReplicationFactor***: Quantidade de réplicas do tópico (redundância)
@@ -20,14 +20,14 @@ docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --describe -
 - ***Replicas***: Lista de brokers replicando os dados deste tópico
 - ***Isr***: Lista de nodes que são réplicas sincronizadas (in-sync replicas)
 
-Alterar tópico message-tests para 3 partições (paralelismo)
+Alterar tópico customer-order para 3 partições (paralelismo)
 ```bash
-docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --alter --topic message-tests --partitions=3
+docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --alter --topic customer-order --partitions=3
 ```
 
-Alterar tópico message-tests para 3 réplicas (redundância)
+Alterar tópico customer-order para 3 réplicas (redundância)
 ```bash
-docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --alter --topic message-tests --partitions=3 --replication-factor=3
+docker exec broker1 kafka-topics --bootstrap-server localhost:29092 --alter --topic customer-order --partitions=3 --replication-factor=3
 ```
 ***Erro***: 
 > Option "[replication-factor]" can't be used with option "[alter]"
