@@ -1,0 +1,57 @@
+{
+  "id": "e581d976-b2f9-4d8d-9340-65baad4f33be",
+  "restaurant": "43.499.665/2594-24",
+  "customer": "178.903.878-22",
+  "state": "RJ",
+  "total_value": 327.95,
+  "items": [
+    {
+      "item": 1,
+      "dish": "Cachorro Quente Ao Molho",
+      "spices": "Especiaria",
+      "vegetable": "Catalônia",
+      "fruit": "Pêra",
+      "drink": "Magna",
+      "price": "R$63.61",
+      "quantity": 2,
+      "total": "R$127.22"
+    },
+    {
+      "item": 2,
+      "dish": "Paleta De Carneiro",
+      "spices": "Alho",
+      "vegetable": "couve-rábano",
+      "fruit": "Mirtilo",
+      "drink": "Imperial",
+      "price": "R$87.75",
+      "quantity": 1,
+      "total": "R$87.75"
+    },
+    {
+      "item": 3,
+      "dish": "Purê De Batata",
+      "spices": "Pimenta-do-reino",
+      "vegetable": "Pepino",
+      "fruit": "Amoras",
+      "drink": "Coral",
+      "price": "R$12.84",
+      "quantity": 1,
+      "total": "R$12.84"
+    },
+    {
+      "item": 4,
+      "dish": "Açaí",
+      "spices": "Canela",
+      "vegetable": "Semente de lótus",
+      "fruit": "Medronheiro",
+      "drink": "Magna",
+      "price": "R$33.38",
+      "quantity": 3,
+      "total": "R$100.14"
+    }
+  ],
+  "payment_method": "money",
+  "updated_at": "2022-10-27T22:44:57.764718",
+  "status_code": 4169,
+  "lucky_cookie": "O prazer de concretizar seus projetos com toda a tranquilidade"
+}

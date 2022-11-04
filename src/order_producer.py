@@ -44,6 +44,6 @@ if __name__ == "__main__":
         # Wait up to 1 second for events. Callbacks will be invoked during
         # this method call if the message is acknowledged.
         events += producer.poll(1)
-        time.sleep(0.1)
+        time.sleep(1)
     producer.flush()
     print(f"All {events} messages sent")

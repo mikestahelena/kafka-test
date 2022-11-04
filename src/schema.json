@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "restaurant": {
+      "type": "string"
+    },
+    "customer": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "total_value": {
+      "type": "number"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "integer"
+          },
+          "dish": {
+            "type": "string"
+          },
+          "spices": {
+            "type": "string"
+          },
+          "vegetable": {
+            "type": "string"
+          },
+          "fruit": {
+            "type": "string"
+          },
+          "drink": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "total": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "payment_method": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "status_code": {
+      "type": "integer"
+    },
+    "lucky_cookie": {
+      "type": "string"
+    }
+  }
+}

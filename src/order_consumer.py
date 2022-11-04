@@ -9,10 +9,9 @@ consumer = Consumer(
     {
         "bootstrap.servers": "localhost:9092,localhost:9093,localhost:9094",
         "group.id": "customer-order-consumers",
-        "client.id": f"consumer-{uuid.uuid4()}",
+        "client.id": "customer-order-consumer",
         "auto.offset.reset": "earliest",
         "enable.auto.commit": True,
-        "partition.assignment.strategy": "cooperative-sticky",
     }
 )
 topic = "customer-order"
